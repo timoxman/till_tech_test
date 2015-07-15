@@ -7,6 +7,9 @@ Rails.application.routes.draw do
 
   get 'pricelists' => 'pricelists#index'
 
+  get 'pricelists/getmenu' => 'pricelists#getmenu'
+  get 'pricelists/generatereceipt' => 'pricelists#generatereceipt'
+
   resources :pricelists do
     resources :prices
   end

@@ -1,1 +1,16 @@
-index.html.erb
+<!DOCTYPE html>
+<html ng-app="tillapp">
+<head>
+  <title>Restauranteur</title>
+  <%= stylesheet_link_tag    "application", media: "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div ng-view>
+  <%= yield %>
+</div>
+
+</body>
+</html>
