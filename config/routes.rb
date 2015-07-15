@@ -7,12 +7,12 @@ Rails.application.routes.draw do
 
   get 'pricelists' => 'pricelists#index'
 
-  get 'pricelists/getmenu' => 'pricelists#getmenu'
-  get 'pricelists/generatereceipt' => 'pricelists#generatereceipt'
+  get 'pricelists/buildPriceList' => 'pricelists#buildPriceList'
+  get 'pricelists/getMenu' => 'pricelists#getMenu'
+  get 'pricelists/generateReceipt' => 'pricelists#generateReceipt'
 
-  resources :pricelists do
-    resources :prices
-  end
+
+  #resources :pricelists
 
   resources :tills
 

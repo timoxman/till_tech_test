@@ -1,4 +1,4 @@
-@till.controller('TillCtrl', [function() {
+till.controller('TillCtrl', [function() {
 
   // empty for now
 
