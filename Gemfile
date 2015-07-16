@@ -32,6 +32,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 gem 'json'
+#give me access to locales for money formatting
+gem 'rails-i18n', github: 'svenfuchs/rails-i18n', branch: 'master' # For 4.x
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

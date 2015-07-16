@@ -1,5 +1,3 @@
-require 'pricelists_helper'
-
 class PricelistsController < ApplicationController
 
   include PricelistsHelper
@@ -44,7 +42,7 @@ class PricelistsController < ApplicationController
                  \"tableNumber\": \"1\",
                  \"numberOfCustomers\": \"4\",
                  \"orderItems\":[{\"Cafe Latte\": 2,
-                                  \"BlueBerry Muffin\": 1
+                                  \"Blueberry Muffin\": 1
 
                 }]
               }]"
@@ -53,7 +51,7 @@ class PricelistsController < ApplicationController
     #this method the picture will not be able to be passed
     receipt = build_receipt(order, pricelist)
 
-    #by the time of the render the padding function is not working (it works to this oint)
+    #by the time of the render the padding function is not working (it works to this point) -?????
     render json: receipt.to_json
   end
 
