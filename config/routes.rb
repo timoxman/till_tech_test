@@ -18,6 +18,7 @@ Rails.application.routes.draw do
   get 'pricelists/buildPriceList' => 'pricelists#buildPriceList'
   get 'pricelists/getMenu' => 'pricelists#getMenu'
   get 'pricelists/generateReceipt' => 'pricelists#generateReceipt'
+  get 'pricelists/amount' => 'pricelists#amount'
 
 
   #resources :pricelists

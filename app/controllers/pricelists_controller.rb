@@ -55,4 +55,19 @@ class PricelistsController < ApplicationController
     render json: receipt.to_json
   end
 
+  def amount
+    orderJ = "[{ \"orderName\": \"Jane\",
+                 \"tableNumber\": \"1\",
+                 \"numberOfCustomers\": \"4\",
+                 \"orderItems\":[{\"Cafe Latte\": 2,
+                                  \"Blueberry Muffin\": 1
+
+                }]
+              }]"
+    order = JSON.parse(orderJ)
+    pricelist = Pricelist.first
+    order_amount = calculate_order(order[0]["orderItems"][0],pricelist.id)
+    render json: order_amount.to_json
+  end
+
 end
