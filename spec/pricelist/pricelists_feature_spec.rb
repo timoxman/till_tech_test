@@ -48,11 +48,5 @@ feature 'pricelists' do
     end
   end
 
-  context 'an order total can be calculated' do
-    scenario 'database loads pricelist and then order is returned(PL05)' do
-      visit '/pricelists/buildPriceList'
-      visit '/pricelists/amount'
-      expect(page).to have_content '13.55'
-    end
-  end
+
 end

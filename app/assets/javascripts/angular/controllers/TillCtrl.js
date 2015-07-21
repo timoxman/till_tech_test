@@ -1,10 +1,7 @@
-till.controller('TillCtrl', ['$scope', function($scope) {
+till.controller('TillCtrl', [
 
-  return $scope.foo = 'bar';
-  }
+ '$scope', function($scope) { return $scope.foo = 'bar';
 
-// doSomething() {
-//   console.log("hello!");
-// };
 
-]);
+
+}]);
